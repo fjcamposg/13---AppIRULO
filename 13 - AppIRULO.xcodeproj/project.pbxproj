@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0978A8BD1E92D2140000BC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8BC1E92D2140000BC91 /* AppDelegate.swift */; };
+		0978A8BF1E92D2140000BC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8BE1E92D2140000BC91 /* ViewController.swift */; };
+		0978A8C21E92D2140000BC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C01E92D2140000BC91 /* Main.storyboard */; };
+		0978A8C51E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8C31E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld */; };
+		0978A8C71E92D2140000BC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C61E92D2140000BC91 /* Assets.xcassets */; };
+		0978A8CA1E92D2140000BC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C81E92D2140000BC91 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0978A8B91E92D2140000BC91 /* 13 - AppIRULO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13 - AppIRULO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0978A8BC1E92D2140000BC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0978A8BE1E92D2140000BC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0978A8C11E92D2140000BC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0978A8C41E92D2140000BC91 /* _3___AppIRULO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_3___AppIRULO.xcdatamodel"; sourceTree = "<group>"; };
+		0978A8C61E92D2140000BC91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0978A8C91E92D2140000BC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0978A8CB1E92D2140000BC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0978A8B61E92D2140000BC91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0978A8B01E92D2140000BC91 = {
+			isa = PBXGroup;
+			children = (
+				0978A8BB1E92D2140000BC91 /* 13 - AppIRULO */,
+				0978A8BA1E92D2140000BC91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0978A8BA1E92D2140000BC91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0978A8B91E92D2140000BC91 /* 13 - AppIRULO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0978A8BB1E92D2140000BC91 /* 13 - AppIRULO */ = {
+			isa = PBXGroup;
+			children = (
+				0978A8BC1E92D2140000BC91 /* AppDelegate.swift */,
+				0978A8BE1E92D2140000BC91 /* ViewController.swift */,
+				0978A8C01E92D2140000BC91 /* Main.storyboard */,
+				0978A8C61E92D2140000BC91 /* Assets.xcassets */,
+				0978A8C81E92D2140000BC91 /* LaunchScreen.storyboard */,
+				0978A8CB1E92D2140000BC91 /* Info.plist */,
+				0978A8C31E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld */,
+			);
+			path = "13 - AppIRULO";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0978A8B81E92D2140000BC91 /* 13 - AppIRULO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0978A8CE1E92D2140000BC91 /* Build configuration list for PBXNativeTarget "13 - AppIRULO" */;
+			buildPhases = (
+				0978A8B51E92D2140000BC91 /* Sources */,
+				0978A8B61E92D2140000BC91 /* Frameworks */,
+				0978A8B71E92D2140000BC91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "13 - AppIRULO";
+			productName = "13 - AppIRULO";
+			productReference = 0978A8B91E92D2140000BC91 /* 13 - AppIRULO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0978A8B11E92D2140000BC91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JC;
+				TargetAttributes = {
+					0978A8B81E92D2140000BC91 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0978A8B41E92D2140000BC91 /* Build configuration list for PBXProject "13 - AppIRULO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0978A8B01E92D2140000BC91;
+			productRefGroup = 0978A8BA1E92D2140000BC91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0978A8B81E92D2140000BC91 /* 13 - AppIRULO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0978A8B71E92D2140000BC91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0978A8CA1E92D2140000BC91 /* LaunchScreen.storyboard in Resources */,
+				0978A8C71E92D2140000BC91 /* Assets.xcassets in Resources */,
+				0978A8C21E92D2140000BC91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0978A8B51E92D2140000BC91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0978A8C51E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld in Sources */,
+				0978A8BF1E92D2140000BC91 /* ViewController.swift in Sources */,
+				0978A8BD1E92D2140000BC91 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0978A8C01E92D2140000BC91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0978A8C11E92D2140000BC91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0978A8C81E92D2140000BC91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0978A8C91E92D2140000BC91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0978A8CC1E92D2140000BC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0978A8CD1E92D2140000BC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0978A8CF1E92D2140000BC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "13 - AppIRULO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JC.-3---AppIRULO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0978A8D01E92D2140000BC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "13 - AppIRULO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JC.-3---AppIRULO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0978A8B41E92D2140000BC91 /* Build configuration list for PBXProject "13 - AppIRULO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0978A8CC1E92D2140000BC91 /* Debug */,
+				0978A8CD1E92D2140000BC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0978A8CE1E92D2140000BC91 /* Build configuration list for PBXNativeTarget "13 - AppIRULO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0978A8CF1E92D2140000BC91 /* Debug */,
+				0978A8D01E92D2140000BC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0978A8C31E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0978A8C41E92D2140000BC91 /* _3___AppIRULO.xcdatamodel */,
+			);
+			currentVersion = 0978A8C41E92D2140000BC91 /* _3___AppIRULO.xcdatamodel */;
+			path = "_3___AppIRULO.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0978A8B11E92D2140000BC91 /* Project object */;
+}
