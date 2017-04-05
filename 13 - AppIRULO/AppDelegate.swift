@@ -17,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navVC = self.window?.rootViewController as! UINavigationController
+        let listGame = navVC.topViewController as! IRGameListViewController
+        listGame.manageContext = persistentContainer.viewContext
+        
+        
+        
+        customUI()
+        
+        
+        
         return true
     }
 
@@ -87,6 +98,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func customUI(){
+        let navBar = UINavigationBar.appearance()
+        navBar.barTintColor = CONSTANTES.COLORES.GRIS_BARRA_NAV
+        navBar.tintColor = CONSTANTES.COLORES.BLANC_TEXTO_BARRA_NAV
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName : CONSTANTES.COLORES.BLANC_TEXTO_BARRA_NAV]
+        
     }
 
 }

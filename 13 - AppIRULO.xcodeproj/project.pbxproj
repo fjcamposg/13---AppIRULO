@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0978A8BD1E92D2140000BC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8BC1E92D2140000BC91 /* AppDelegate.swift */; };
-		0978A8BF1E92D2140000BC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8BE1E92D2140000BC91 /* ViewController.swift */; };
 		0978A8C21E92D2140000BC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C01E92D2140000BC91 /* Main.storyboard */; };
 		0978A8C51E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8C31E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld */; };
 		0978A8C71E92D2140000BC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C61E92D2140000BC91 /* Assets.xcassets */; };
 		0978A8CA1E92D2140000BC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0978A8C81E92D2140000BC91 /* LaunchScreen.storyboard */; };
+		0978A8D21E92DFBA0000BC91 /* IRGameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8D11E92DFBA0000BC91 /* IRGameListViewController.swift */; };
+		0978A8D41E92DFEA0000BC91 /* IRCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8D31E92DFEA0000BC91 /* IRCustomCell.swift */; };
+		0978A8D61E92DFFE0000BC91 /* IRAddNewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8D51E92DFFE0000BC91 /* IRAddNewGameViewController.swift */; };
+		0978A8D81E92E0060000BC91 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978A8D71E92E0060000BC91 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0978A8B91E92D2140000BC91 /* 13 - AppIRULO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13 - AppIRULO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0978A8BC1E92D2140000BC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0978A8BE1E92D2140000BC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0978A8C11E92D2140000BC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0978A8C41E92D2140000BC91 /* _3___AppIRULO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_3___AppIRULO.xcdatamodel"; sourceTree = "<group>"; };
 		0978A8C61E92D2140000BC91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0978A8C91E92D2140000BC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0978A8CB1E92D2140000BC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0978A8D11E92DFBA0000BC91 /* IRGameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRGameListViewController.swift; sourceTree = "<group>"; };
+		0978A8D31E92DFEA0000BC91 /* IRCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCustomCell.swift; sourceTree = "<group>"; };
+		0978A8D51E92DFFE0000BC91 /* IRAddNewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRAddNewGameViewController.swift; sourceTree = "<group>"; };
+		0978A8D71E92E0060000BC91 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				0978A8BC1E92D2140000BC91 /* AppDelegate.swift */,
-				0978A8BE1E92D2140000BC91 /* ViewController.swift */,
+				0978A8DA1E92E01E0000BC91 /* API */,
+				0978A8D91E92E0120000BC91 /* VIEW_CONTROLLERS */,
 				0978A8C01E92D2140000BC91 /* Main.storyboard */,
 				0978A8C61E92D2140000BC91 /* Assets.xcassets */,
 				0978A8C81E92D2140000BC91 /* LaunchScreen.storyboard */,
@@ -65,6 +72,24 @@
 				0978A8C31E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld */,
 			);
 			path = "13 - AppIRULO";
+			sourceTree = "<group>";
+		};
+		0978A8D91E92E0120000BC91 /* VIEW_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				0978A8D11E92DFBA0000BC91 /* IRGameListViewController.swift */,
+				0978A8D51E92DFFE0000BC91 /* IRAddNewGameViewController.swift */,
+				0978A8D31E92DFEA0000BC91 /* IRCustomCell.swift */,
+			);
+			name = VIEW_CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		0978A8DA1E92E01E0000BC91 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0978A8D71E92E0060000BC91 /* Utils.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0978A8C51E92D2140000BC91 /* _3___AppIRULO.xcdatamodeld in Sources */,
-				0978A8BF1E92D2140000BC91 /* ViewController.swift in Sources */,
+				0978A8D61E92DFFE0000BC91 /* IRAddNewGameViewController.swift in Sources */,
 				0978A8BD1E92D2140000BC91 /* AppDelegate.swift in Sources */,
+				0978A8D21E92DFBA0000BC91 /* IRGameListViewController.swift in Sources */,
+				0978A8D41E92DFEA0000BC91 /* IRCustomCell.swift in Sources */,
+				0978A8D81E92E0060000BC91 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
