@@ -47,11 +47,28 @@ class IRAddNewGameViewController: UIViewController {
     
     
     @IBAction func miSwtichChangedValue(_ sender: UISwitch) {
+        if sender.isOn{
+            miPrestadoQuienGame.isEnabled = true
+            miCuandoPrestadoGame.isEnabled = true
+            miCuandoPrestadoGame.text = dateFormatter.string(from: Date())
+            
+        } else {
+        miPrestadoQuienGame.isEnabled = false
+        miCuandoPrestadoGame.isEnabled = false
+        miPrestadoQuienGame.text = ""
+        miCuandoPrestadoGame.text = ""
+        }
     }
     
     
     
     @IBAction func eliminarVideoJuegoACTION(_ sender: Any) {
+        if let context = manageContext{
+            context.delete(game!)
+            game = nil
+            iRuDelegate?.didAddGame()
+            _ = navigationController?.popViewController(animated: true)
+        }
     }
     
     
@@ -97,11 +114,49 @@ class IRAddNewGameViewController: UIViewController {
         miCuandoPrestadoGame.inputView = datePicker
         
         
+        //DOS logicas en el mismo VC
         
+        // 1. add / 2 edit
         
+        if game == nil {
+            self.title = "Añadir Videojuego"
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonAction))
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonAction))
+            miEliminarVideojuegoBoton.isHidden = true
+            miSwitchBorrowed.isOn = false
+        } else {
+            self.title = "Editar Videojuego"
+            miTituloGame.text = game?.title
+            if let borrowed = game?.borrowed{
+                miSwitchBorrowed.isOn = borrowed
+            }
+            miPrestadoQuienGame.text = game?.borrowedTo
+            if let borrowedDate = game?.borrowedDate as Date?{
+                miCuandoPrestadoGame.text = dateFormatter.string(from: borrowedDate)
+            }
+            
+            if let imageData = game?.image as Data?{
+                miImageGame.image = UIImage(data: imageData)
+            }
+            miEliminarVideojuegoBoton.isHidden = false
+        }
+        
+        if !miSwitchBorrowed.isOn{
+            miPrestadoQuienGame.isEnabled = false
+            miCuandoPrestadoGame.isEnabled = false
+        }
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if game != nil {
+            saveGame()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -126,21 +181,74 @@ class IRAddNewGameViewController: UIViewController {
     
     
     func keyboardWillShow(_ notification : Notification){
-        
+        let info = notification.userInfo!
+        let keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey]as! NSValue).cgRectValue
+        let keyboardTime = (info[UIKeyboardAnimationDurationUserInfoKey]as! NSNumber).doubleValue
+        UIView.animate(withDuration: keyboardTime) { 
+            self.view.frame.origin.y = -(keyboardFrame.height)
+        }
     }
     
-    func keyboardWillHide(_ notificaion : Notification) {
-        
+    func keyboardWillHide(_ notification : Notification) {
+        let info = notification.userInfo!
+        let keyboardTime = (info[UIKeyboardAnimationDurationUserInfoKey]as! NSNumber).doubleValue
+        UIView.animate(withDuration: keyboardTime) {
+            self.view.frame.origin.y = 0        }
     }
     
     func  hideKeyboard(){
-        
+        for c_view in self.view.subviews{
+            if let textField = c_view as? UITextField{
+                textField.resignFirstResponder()
+            }
+        }
     }
     
     func datePickerValueChanged(_ picker : UIDatePicker){
         miCuandoPrestadoGame.text = dateFormatter.string(from: picker.date)
     }
     
+    func cancelButtonAction(){
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func saveButtonAction(){
+        saveGame()
+        dismiss(animated: true, completion: nil)
+    }
+    func saveGame(){
+        // inyectamos el contexto
+        
+        if let context = manageContext{
+            //1 -> 
+            var editedGame : Game?
+            if game == nil {
+                editedGame = Game(context: context)
+            } else {
+                editedGame = game
+            }
+            
+            editedGame?.title = self.miTituloGame.text
+            editedGame?.borrowed = self.miSwitchBorrowed.isOn
+            
+            let imageData = UIImageJPEGRepresentation(miImageGame.image!, 0.3)
+            editedGame?.image = imageData as NSData?
+            
+            if (editedGame?.borrowed)!{
+                editedGame?.borrowedTo = miPrestadoQuienGame.text?.uppercased()
+                editedGame?.borrowedDate = dateFormatter.date(from: miCuandoPrestadoGame.text!) as NSDate?
+                
+            }
+            
+            do{
+                try context.save()
+                self.iRuDelegate?.didAddGame()
+            }catch{
+                print("Error al guardar los datos en coredata")
+            }
+            
+        }
+    }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
