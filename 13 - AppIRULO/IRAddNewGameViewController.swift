@@ -53,10 +53,10 @@ class IRAddNewGameViewController: UIViewController {
             miCuandoPrestadoGame.text = dateFormatter.string(from: Date())
             
         } else {
-        miPrestadoQuienGame.isEnabled = false
-        miCuandoPrestadoGame.isEnabled = false
-        miPrestadoQuienGame.text = ""
-        miCuandoPrestadoGame.text = ""
+            miPrestadoQuienGame.isEnabled = false
+            miCuandoPrestadoGame.isEnabled = false
+            miPrestadoQuienGame.text = ""
+            miCuandoPrestadoGame.text = ""
         }
     }
     

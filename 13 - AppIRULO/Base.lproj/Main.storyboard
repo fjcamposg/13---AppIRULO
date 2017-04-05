@@ -46,14 +46,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1Mm-5U-SaE">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="1Mm-5U-SaE" customClass="IRCustomCell" customModule="_3___AppIRULO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="304" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPZ-kz-GhG">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPZ-kz-GhG" customClass="IR">
                                                     <rect key="frame" x="0.0" y="0.0" width="304" height="304"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -102,6 +102,11 @@
                                             <constraint firstAttribute="trailing" secondItem="X2e-9z-zhd" secondAttribute="trailing" id="qCg-od-yb6"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="miBorrowedDateGame" destination="fdK-LG-hYi" id="v6V-jo-lQM"/>
+                                            <outlet property="miBorrowedGame" destination="rdO-gU-brb" id="Tpb-14-xd8"/>
+                                            <outlet property="miBorrowedToGame" destination="tfD-bb-6DF" id="mCD-z4-p9t"/>
+                                            <outlet property="miImageGame" destination="LPZ-kz-GhG" id="qeh-AP-XUm"/>
+                                            <outlet property="miTituloGame" destination="X2e-9z-zhd" id="xfE-fJ-mMI"/>
                                             <segue destination="rEk-Bm-Il0" kind="show" identifier="editGameSegue" id="TaG-EB-rNa"/>
                                         </connections>
                                     </collectionViewCell>
